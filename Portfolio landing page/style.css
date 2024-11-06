@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: rgb(1, 1, 36);
+    position: relative;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    background-color: rgb(3, 3, 3);
+    z-index: 999;
+}
+
+header nav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    font-size: 40px;
+    font-weight: bold;
+    color: #058b75;
+}
+
+nav #menu {
+    display: flex;
+    gap: 50px;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #af93c7;
+    transition: all 0.2s linear;
+}
+
+li a:hover {
+    color: #faf6fd;
+    border-bottom: 1px solid #a787c2;
+    transition: all 1s linear;
+
+}
+
+#humburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff5;
+}
+
+#hero-section {
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+    background: url(./images/background.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#hero-section::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#contant {
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+#contant h1 {
+    font-size: 40px;
+    color: rgba(69, 144, 230, 0.671);
+}
+
+#contant span {
+    font-size: 22px;
+    color: rgb(243 177 92);
+}
+
+#contant p {
+    font-size: 20px;
+    color: rgb(101 145 183);
+}
+
+#social-icons {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+}
+
+#social-icons a i {
+    color: rgb(13, 124, 175);
+}
+
+#social-icons a i:hover {
+    color: rgb(156, 175, 240);
+    bottom: 5px;
+}
+
+#project-section {
+    width: 100%;
+    height: 500px;
+}
